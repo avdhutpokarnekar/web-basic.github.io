@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+  button{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: rgb(194, 53, 10);
+  }
+  .url{
+    width: fit-content;
+  }
+          
+body {
+  font-size: 28px;}
+   img{
+     width: 100%;
+     }
+ ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 5px;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;}
+li {
+  float: left;}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  text-decoration:tomato;}
+li a:hover {
+  background-color: rgb(71, 73, 71);}
+.active {
+  background-image: linear-gradient(rgb(44, 126, 173),rgb(147, 187, 248),white);}
+  input{
+    text-align: center;
+  }
+  #blank,#blank1{
+    color: red;
+    font-size:medium;
+  }
+  span{
+    background-color: black;
+  }
+
+        </style>
+    </head>
+    <body>
+        <ul class="active">
+            <li style="padding: 5px 25px;width: 150px;"><img src="hotel logo.html" alt=logo;></li>
+            <li style="padding: 5px 70px;" ><a  href="home.html">Home</a></li>
+            <li style="padding: 5px 30px;"><a  href="project about us.html">about us</a></li>
+            <li style="padding: 5px 50px;"><a href="location.html">location</a></li>
+            <li style="padding: 5px 50px;"><a  href="contact.html">contact</a></li>
+            <li style="padding: 5px 50px;"><a href="booking.html">booking</a></li>
+            </ul>         
+<div style="float: left; width: 600px;height: 400px;color: rgb(241, 238, 238);">
+<form name="Details">          
+  <legend style="text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: red;">Personel Details</legend>
+  <label><span>first name</span></label><br>
+  <input type="text" id="txt1"><span id="blank"></span><br>
+  <label><span>Last name</span></label><br>
+  <input type="text" id="txt2"><span id="blank1"></span><br>
+  <label><span>Date of Birth</span></label><br>
+  <input type="date"><br>
+  <span>Gender:</span><input type="radio" name="gender1" value="male">male
+  <input type="radio" name="gender1" value="female">female
+  <input type="radio" name="gender1" value="other">other<br>
+  <span>Nationality</span>
+  <select style="width: 200px;">
+    <option>--select--</option>
+    <option>India</option>
+    <option>America</option>
+    <option>Canada</option>
+    <option>Dubai</option>
+  </select></div>
+  <div style="background:url(book2.jpg);color: white">
+    <legend style="text-align:center;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: red;">For booking</legend><hr>
+    <span>Check In:</span> <input type="date"><span>Check Out: </span><input type="date"><br>
+    <select style="width: 200px;text-align:right;">
+      <option style="text-align: left;">--Select--</option>
+      <option style="text-align: left;">Kolhapur</option>
+      <option style="text-align: left;">Goa</option>
+      <option style="text-align: left;">Kashmir</option>
+      <option style="text-align: left;">Mumbai</option>
+      <option style="text-align: left;">Pune</option>
+    </select><br>
+   <span>Reason:-</span> <br><input type="radio" name="reason"><span>Personal</span><br>
+           <input type="radio" name="reason"><span>Official</span><br>
+           <input type="radio" name="reason"><span>Vacation</span><br><br><br>
+  </fieldset> </form>
+  <input height="20px " width="30px" style="text-align: center;"  type="button" value="submit" onclick="chng()" color="red">
+  <script>
+    function chng(){
+      var x=document.getElementById('txt1').value;
+      if(x==""){
+      document.getElementById('blank').innerHTML="*please fill the blanck";}
+      var x=document.getElementById('txt2').value;
+      if(x==""){
+      document.getElementById('blank1').innerHTML="*please fill the blanck";}
+    }
+  </script>
+</div>
+<hr><br>
+<div>
+  <p style="text-align:start;font-family:'Courier New', Courier, monospace">"You can visit same place agian & agian and see its differntly each time" </p>
+</div>
+<h6 style="text-align: right; font-size: small;">Copyright © 2022 Booking.com™. All rights reserved</h6>

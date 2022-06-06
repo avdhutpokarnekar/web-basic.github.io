@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript'
+  src='http://code.jquery.com/jquery-1.6.2.js'>
+</script>
+<style>
+body {
+  font-size: 28px;}
+p::first-letter{
+    font-size: xx-large;
+    color: red;
+}
+img {
+    width: 140px;
+    height: 80px;
+  }
+ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 5px;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;}
+li {
+  float: left;}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  text-decoration:tomato;}
+li a:hover {
+  background-color:orange;}
+.active {
+  background-image: linear-gradient(rgb(44, 126, 173),rgb(147, 187, 248),white);}
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+    width: 32%;}
+    div.desc {
+  padding: 15px;
+  text-align: center;}
+  div.gallery img {
+  width: 100%;
+  height:100%;
+}
+li.footer{
+  margin: 10px;
+  padding: 40px;
+  border: none;
+}
+</style>
+</head>
+<body>
+<ul class="active">
+<li style="padding: 5px 25px;"><img src="hotel logo.html" alt=logo;></li>
+<li style="padding: 5px 70px;" ><a  href="home.html">Home</a></li>
+<li style="padding: 5px 30px;"><a  href="project about us.html">about us</a></li>
+<li style="padding: 5px 50px;"><a href="location.html">location</a></li>
+<li style="padding: 5px 50px;"><a  href="contact.html">contact</a></li>
+<li style="padding: 5px 50px;"><a href="booking.html">booking</a></li>
+</ul>
+<div>
+  <img id="myImg" src="hotel image.jpg" style="width:100%;height: 500px;">
+  </div>
+<div>
+    <p style="font-size: medium; font-family:courier;">Whether it’s with friends, family, or coworkers, we believe even the longest journeys are worth it when they bring people together. At Holiday Inn Express hotels, we want to make your next connection as easy as possible. That’s why we offer a clean, consistent, and comfortable stay at more than 2,900 locations around the world. Here you can explore our directory of hotels and book your stay securely online. We're there. So you can be too.</p>
+</div>
+<div>
+<hr>
+    <h1 style="text-align: center;"><bold>We've got you covered</bold></We></h1>
+</div>
+<div class="gallery">
+      <img id="img" src="bed.jpg" alt="time to slip">
+    </a>
+    <div class="desc"><i>sleep is the best meditation</i></div>
+  </div>
+  <div class="gallery">
+      <img src="coffee.jpg" alt="brakfast" >
+    </a>
+    <div class="desc"><i>All happiness depends upon a leisurely breakfast</i></div>
+  </div>
+  <div class="gallery">
+      <img src="lunch.jpg" alt="dinner">
+    </a>
+    <div class="desc"><i>The power hour Lunch</i></div>
+  </div><br><br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <div >
+    <h3 style="font-size: 20px;  text-align:center; font-family:cursive;">the world leader in online travel and related services</h3>
+  <ul>
+    <li class="footer"> <img src="kayak.png"></li>
+    <li  class="footer"> <img src="booking.png"></li>
+    <li  class="footer"> <img src="open.png"></li>
+    <li  class="footer"> <img src="priceline.png"></li>
+    <li  class="footer"> <img src="agoda.png"></li>
+</ul>
+</div>
+<script type='text/javascript'>
+  $(window).load(function(){
+      $('ul').hover(function(){
+          $('.footer').css("border","solid 1px green");
+      });
+  });
+  </script>
+<hr>
+<h6 style="text-align: right; font-size: small;">Copyright © 2022 Booking.com™. All rights reserved</h6>
+
+</body>
+<html>
